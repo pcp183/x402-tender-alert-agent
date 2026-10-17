@@ -1,0 +1,29 @@
+{
+  "name": "x402-tender-alert-agent",
+  "version": "0.1.0",
+  "description": "Example agent: a daily EU tender alert (TED) by CPV, country and value range, paid per run with x402",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/agent.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@x402/evm": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "viem": "^2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcp183/x402-tender-alert-agent"
+  }
+}
